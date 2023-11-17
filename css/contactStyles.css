@@ -36,7 +36,7 @@ header {
 
 #bgimage {
 	
-	background-image:url('../images/contact/header/header.jpg'); 
+	background-image:url('../images/contact/header.jpg'); 
 	background-size: cover; 
 	background-position: center;
 	height: 100vh;
