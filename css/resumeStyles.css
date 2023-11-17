@@ -1,0 +1,43 @@
+
+body, html {
+	height: 100%;
+}
+
+/* section heights*/
+
+.section {
+	width: 100%;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  min-height: 25rem;
+  color:black;
+  width: 100%;
+  overflow: hidden;
+}
+
+/*header settings*/
+
+#bgimage {
+  background-image: url('../images/resume/mountain.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#helloBox {
+	margin-bottom: 20%;
+}
+
+@media only screen and (max-width: 500px) {
+	
+
+#bgimage {
+	
+	background-image:url('../images/resume/mountainMobile.jpg'); 
+	background-size: cover; 
+	background-position: center;
+	height: 100vh;
+	}
+}
