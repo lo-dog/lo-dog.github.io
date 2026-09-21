@@ -1,0 +1,395 @@
+/* shared professional polish. loaded after bootstrap and page styles. */
+
+:root {
+  --site-text: #3a3a3a;
+  --site-heading: #2c2c2c;
+  --site-muted: #5c5c5c;
+  --site-link: #3d6f64;
+  --site-link-hover: #2b524a;
+  --site-accent: #5a9a88;
+  --site-navbar: #f8f9fa;
+  --site-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  color: var(--site-text);
+  line-height: 1.65;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--site-heading);
+  letter-spacing: -0.015em;
+}
+
+a {
+  color: var(--site-link);
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  color: var(--site-link-hover);
+}
+
+:focus-visible {
+  outline: 2px solid var(--site-accent);
+  outline-offset: 3px;
+}
+
+/* navbar */
+
+.navbar {
+  --bs-navbar-color: #4a4a4a;
+  --bs-navbar-hover-color: #1a1a1a;
+  --bs-navbar-active-color: #1a1a1a;
+  --bs-navbar-brand-color: #2c2c2c;
+  --bs-navbar-brand-hover-color: #1a1a1a;
+  background-color: var(--site-navbar);
+  box-shadow: var(--site-shadow);
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem;
+}
+
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-right: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--site-heading);
+  text-decoration: none;
+}
+
+.navbar .navbar-brand img {
+  width: 56px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.navbar .nav-link {
+  color: #4a4a4a;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #1a1a1a;
+}
+
+.navbar .nav-link.active {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+/* hero */
+
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+header#bgimage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.48) 0%,
+    rgba(0, 0, 0, 0.22) 46%,
+    rgba(0, 0, 0, 0.08) 100%
+  );
+  pointer-events: none;
+}
+
+header .container {
+  position: relative;
+  z-index: 1;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+#helloBox {
+  margin-bottom: 0;
+  max-width: 36rem;
+  background-color: rgba(0, 0, 0, 0.32);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+#helloBox h1,
+#helloBox p,
+#helloBox h5,
+#helloBox li {
+  color: #fff;
+}
+
+#helloBox .lead {
+  margin-top: 0.35rem;
+  opacity: 0.95;
+}
+
+#helloBox h5 {
+  margin-top: 1.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+#helloBox ul {
+  margin-top: 0.75rem;
+}
+
+#helloBox li {
+  margin-bottom: 0.35rem;
+}
+
+#helloBox a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+#helloBox a:hover,
+#helloBox a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+/* page sections */
+
+.section {
+  width: 100%;
+  padding: 4.25rem 0;
+  scroll-margin-top: 5.25rem;
+}
+
+.section > .container {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.section > .container > h1,
+.section > .container > h2,
+.section .section-title {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.section hr {
+  margin: 0.5rem 0 1.75rem;
+  opacity: 0.18;
+}
+
+.section p,
+.section li {
+  color: var(--site-text);
+}
+
+.section li {
+  margin-bottom: 0.4rem;
+}
+
+/* buttons */
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--site-accent);
+  --bs-btn-border-color: var(--site-accent);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #4e8776;
+  --bs-btn-hover-border-color: #4e8776;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #457666;
+  --bs-btn-active-border-color: #457666;
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #a3c4ba;
+  --bs-btn-disabled-border-color: #a3c4ba;
+  color: #fff;
+  background-color: var(--site-accent);
+  border-color: var(--site-accent);
+}
+
+.btn-grey {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #5c636a;
+  --bs-btn-border-color: #5c636a;
+}
+
+/* cards and accordion */
+
+.card {
+  border-color: #e4e4e4;
+}
+
+.card-title,
+.card-header h5 {
+  color: var(--site-heading);
+}
+
+.accordion-button {
+  color: var(--site-heading);
+  font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--site-heading);
+  background-color: #f4f4f2;
+  box-shadow: none;
+}
+
+.accordion-body {
+  color: var(--site-text);
+}
+
+.accordion-body ul {
+  margin-top: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+/* contact */
+
+.contact-intro {
+  max-width: 38rem;
+}
+
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.5rem;
+  margin: 1.25rem 0 2rem;
+  font-weight: 600;
+}
+
+.contact-details a {
+  color: var(--site-heading);
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  color: var(--site-link);
+  text-decoration: underline;
+}
+
+.contact-form .form-label {
+  margin-bottom: 0.35rem;
+  font-weight: 500;
+  color: var(--site-heading);
+}
+
+.contact-form .form-control {
+  padding: 0.7rem 0.85rem;
+}
+
+.contact-form textarea.form-control {
+  min-height: 8rem;
+}
+
+.contact-form .btn {
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.4rem;
+}
+
+/* education blocks */
+
+.edu-item {
+  margin-bottom: 2.25rem;
+}
+
+.edu-item:last-child {
+  margin-bottom: 0;
+}
+
+.edu-item h3,
+.edu-item h4 {
+  margin-bottom: 0.35rem;
+}
+
+.edu-item .edu-school {
+  margin-bottom: 0.15rem;
+  color: var(--site-heading);
+  font-weight: 600;
+}
+
+.edu-item .edu-meta {
+  margin-bottom: 0.85rem;
+  color: var(--site-muted);
+}
+
+.edu-item ul {
+  margin-bottom: 0;
+}
+
+/* experience cards */
+
+#experience .card {
+  margin-bottom: 1.25rem;
+}
+
+#experience .card-body {
+  padding: 1.5rem 1.5rem 1.25rem;
+}
+
+#experience .card-title {
+  margin-bottom: 0.35rem;
+}
+
+#experience h5 {
+  margin-bottom: 1rem;
+  color: var(--site-muted);
+  font-weight: 500;
+}
+
+/* footer */
+
+footer {
+  padding: 1.75rem 0;
+  color: var(--site-muted);
+  font-size: 0.92rem;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer a {
+  color: var(--site-link);
+}
+
+@media (max-width: 767px) {
+  header .container {
+    padding-top: 5.5rem;
+  }
+
+  #helloBox .display-3 {
+    font-size: 2.5rem;
+  }
+
+  .section {
+    padding: 3rem 0;
+  }
+
+  .navbar .nav-link {
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+  }
+}

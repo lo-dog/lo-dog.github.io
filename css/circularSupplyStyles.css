@@ -1,0 +1,123 @@
+body, html {
+  height: 100%;
+}
+
+#website,
+#role {
+  padding-top: 10px;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+#bgimage {
+  background-image: url('../images/circular-supply/homehero.webp');
+  background-size: cover;
+  background-position: center 20px;
+}
+
+#helloBox {
+  margin-bottom: 20%;
+}
+
+.card-header.cs-card-header-dark {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.card-header.cs-card-header-dark h5 {
+  color: #fff;
+}
+
+.cs-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: #e9ecef;
+  color: #343a40;
+  margin-right: 0.35rem;
+  margin-bottom: 0.35rem;
+}
+
+.cs-iframe-wrap {
+  position: relative;
+  width: 100%;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: #f8f9fa;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.08);
+}
+
+.cs-iframe-wrap iframe {
+  display: block;
+  width: 100%;
+  height: 520px;
+  border: 0;
+}
+
+.cs-iframe-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.6rem 1rem;
+  background: #e9ecef;
+  color: #495057;
+  font-size: 0.875rem;
+}
+
+.cs-iframe-bar a {
+  color: #495057;
+  white-space: nowrap;
+}
+
+.cs-iframe-bar a:hover {
+  color: #212529;
+}
+
+.cs-feature-card {
+  height: 100%;
+}
+
+.cs-screenshot {
+  width: 100%;
+  height: auto;
+  border-radius: 0.375rem;
+  border: 1px solid #dee2e6;
+}
+
+.cs-portal-grid img {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cs-portal-grid img:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.12);
+}
+
+@media only screen and (max-width: 768px) {
+  .cs-iframe-wrap iframe {
+    height: 360px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #bgimage {
+    background-image: url('../images/circular-supply/homehero.webp');
+    /* zoom in and shift down so only mountain and sky show; forest is cropped below */
+    background-size: auto 280%;
+    background-position: center 28%;
+    height: 100vh;
+  }
+}

@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Logan Davis portfolio">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Logan Davis Portfolio">
+    <meta property="og:title" content="Circular Supply | Logan Davis Portfolio">
+    <meta property="og:description" content="Logan Davis portfolio">
+    <meta property="og:url" content="https://lo-dog.github.io/circularSupplyFinal.html">
+    <meta property="og:image" content="https://lo-dog.github.io/images/og-preview.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Logan Davis">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Circular Supply | Logan Davis Portfolio">
+    <meta name="twitter:description" content="Logan Davis portfolio">
+    <meta name="twitter:image" content="https://lo-dog.github.io/images/og-preview.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css?v=20260921links2">
+    <link rel="stylesheet" type="text/css" href="css/circularSupplyStyles.css?v=20260921admingrey3">
+    <title>Circular Supply | Logan Davis Portfolio</title>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-sm bg-light">
+      <div class="container-fluid">
+        <img src="images/plant1.png" width="70" height="50" alt="">
+        <p style="margin-bottom: 0rem;">Logan Davis</p>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-main" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-main">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a href="aboutFinal.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="projectsFinal.html" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="circularSupplyFinal.html" class="nav-link active">Circular Supply</a>
+            </li>
+            <li class="nav-item">
+              <a href="contactFinal.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header id="bgimage" class="border-bottom">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-md-6 d-flex align-items-center">
+            <div id="helloBox" class="p-4 rounded">
+              <h1 class="display-3 text-white">Circular Supply</h1>
+              <p class="lead text-white mb-0">Freelance web development for a PPE recycling platform — marketing website and full-stack client portal, deployed in production.</p>
+              <h5 class="mt-5 text-white">Page Contents:</h5>
+              <ul class="list-unstyled mt-3 text-white">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#website">Marketing Website</a></li>
+                <li><a href="#portal">Web Portal</a></li>
+                <li><a href="#role">My Role</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section" id="overview">
+      <div class="container mt-5 mb-5">
+        <h2 class="mt-5">Overview</h2>
+        <hr>
+        <div class="row mt-4">
+          <div class="col-lg-8">
+            <p>Circular Supply is a Canadian company that helps industrial and healthcare teams recycle PPE instead of sending it to landfill. I built their public marketing site and a production web portal that handles pickups, credits, invoicing, and ESG reporting for both admin staff and client organizations.</p>
+            <p class="mb-0">Both projects are live:</p>
+            <ul class="mt-2">
+              <li><a href="https://circularsupply.org" target="_blank" rel="noopener noreferrer">circularsupply.org</a> — marketing website</li>
+              <li><a href="https://portal.circularsupply.org" target="_blank" rel="noopener noreferrer">portal.circularsupply.org</a> — authenticated web portal</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">At a glance</h5>
+                <p class="mb-2"><strong>Client:</strong> Circular Supply Inc.</p>
+                <p class="mb-2"><strong>Timeline:</strong> 2025 – Present</p>
+                <p class="mb-3"><strong>Role:</strong> Freelance Web Developer &amp; Front-End Designer</p>
+                <div>
+                  <span class="cs-badge">Astro</span>
+                  <span class="cs-badge">React</span>
+                  <span class="cs-badge">TypeScript</span>
+                  <span class="cs-badge">NestJS</span>
+                  <span class="cs-badge">PostgreSQL</span>
+                  <span class="cs-badge">Railway</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-light" id="website">
+      <div class="container mt-5 mb-5 pb-5">
+        <h2 class="mt-5">Marketing Website</h2>
+        <hr>
+        <p>The public site explains Circular Supply's PPE recycling programs, ESG reporting capabilities, and product offerings. It was designed from Figma wireframes and built with Astro for fast static delivery plus React islands for interactive sections.</p>
+
+        <div class="row mt-4 mb-4">
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card cs-feature-card">
+              <div class="card-body">
+                <h5 class="card-title">Pages</h5>
+                <ul class="mb-0">
+                  <li>Home — hero, how it works, product highlights</li>
+                  <li>Solutions — service models and program tiers</li>
+                  <li>ESG Reporting — sample reports and impact data</li>
+                  <li>Products — recyclable glove catalog</li>
+                  <li>About, Contact, Impact, and legal pages</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card cs-feature-card">
+              <div class="card-body">
+                <h5 class="card-title">Features</h5>
+                <ul class="mb-0">
+                  <li>Contact and lead capture forms with bot protection</li>
+                  <li>Sample ESG report download flow</li>
+                  <li>Responsive, mobile-first layouts from Figma</li>
+                  <li>Stripe checkout integration for glove orders</li>
+                  <li>Resend email notifications for form submissions</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card cs-feature-card">
+              <div class="card-body">
+                <h5 class="card-title">Tech stack</h5>
+                <ul class="mb-0">
+                  <li>Astro 5 with React components</li>
+                  <li>TypeScript, CSS design tokens</li>
+                  <li>Playwright visual regression tests</li>
+                  <li>Deployed on Railway with Cloudflare DNS</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="h4 mt-5 mb-3">Live preview</h3>
+        <div class="cs-iframe-wrap mb-4">
+          <div class="cs-iframe-bar">
+            <span>circularsupply.org</span>
+            <a href="https://circularsupply.org" target="_blank" rel="noopener noreferrer">Open live site &rarr;</a>
+          </div>
+          <iframe
+            src="https://circularsupply.org"
+            title="Circular Supply marketing website"
+            loading="lazy"
+            sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+          ></iframe>
+        </div>
+
+        <h3 class="h4 mt-5 mb-3">Screenshots</h3>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <figure>
+              <img src="images/circular-supply/website-home.png" alt="Circular Supply homepage" class="cs-screenshot">
+              <figcaption class="text-muted small mt-2">Homepage</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure>
+              <img src="images/circular-supply/website-solutions.png" alt="Circular Supply solutions page" class="cs-screenshot">
+              <figcaption class="text-muted small mt-2">Solutions</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4">
+            <figure>
+              <img src="images/circular-supply/website-reporting.png" alt="Circular Supply ESG reporting page" class="cs-screenshot">
+              <figcaption class="text-muted small mt-2">ESG Reporting</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portal">
+      <div class="container mt-5 mb-5 pb-5">
+        <h2 class="mt-5">Web Portal</h2>
+        <hr>
+        <p>The portal is a full-stack application for managing PPE recycling operations. It supports role-based access for Circular Supply admins and client organizations, with separate views and permissions for each.</p>
+
+        <div class="row mt-4">
+          <div class="col-lg-6 mb-4">
+            <div class="card h-100">
+              <div class="card-header cs-card-header-dark">
+                <h5 class="mb-0">Admin Portal</h5>
+              </div>
+              <div class="card-body">
+                <ul>
+                  <li><strong>Dashboard</strong> — operations overview, PPE weight metrics, active sites</li>
+                  <li><strong>Client management</strong> — accounts, contacts, program details</li>
+                  <li><strong>Site management</strong> — client locations with Google Maps integration</li>
+                  <li><strong>Pickup management</strong> — record pickups with automatic credit calculations</li>
+                  <li><strong>Scheduling</strong> — calendar view for pickup requests and recurring schedules</li>
+                  <li><strong>Circular Credits</strong> — track earnings, redemptions, and tier progress across clients</li>
+                  <li><strong>Invoices</strong> — billing with Xero API integration and PDF export</li>
+                  <li><strong>Notifications &amp; email</strong> — templates, history, and automated alerts</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <div class="card h-100">
+              <div class="card-header">
+                <h5 class="mb-0">Client Portal</h5>
+              </div>
+              <div class="card-body">
+                <ul>
+                  <li><strong>Dashboard</strong> — environmental impact overview and credit balance</li>
+                  <li><strong>Pickups</strong> — history, status tracking, and CSV export</li>
+                  <li><strong>Scheduling</strong> — request and view upcoming pickups</li>
+                  <li><strong>Circular Credits</strong> — earned credits, redemptions, and reward tiers</li>
+                  <li><strong>Invoices</strong> — view and download billing documents</li>
+                  <li><strong>Notifications</strong> — in-app alerts for pickup and credit updates</li>
+                </ul>
+                <p class="small text-muted mb-0 mt-3">Credits are earned at 3 Circular Credits per kg of accepted PPE, expire after 12 months (FIFO), and can be redeemed through a tiered rewards system.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-2 mb-4">
+          <div class="col-md-6 col-lg-3 mb-3">
+            <div class="card cs-feature-card text-center">
+              <div class="card-body">
+                <h6 class="card-title">Frontend</h6>
+                <p class="small mb-0">React 18, TypeScript, Vite, Tailwind CSS, Shadcn UI, React Router, TanStack Query</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-3">
+            <div class="card cs-feature-card text-center">
+              <div class="card-body">
+                <h6 class="card-title">Backend</h6>
+                <p class="small mb-0">NestJS, PostgreSQL, JWT auth, Drizzle ORM, Supabase storage</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-3">
+            <div class="card cs-feature-card text-center">
+              <div class="card-body">
+                <h6 class="card-title">Integrations</h6>
+                <p class="small mb-0">Google Maps, Xero API, Resend email, QR codes, PDF generation</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-3">
+            <div class="card cs-feature-card text-center">
+              <div class="card-body">
+                <h6 class="card-title">Deployment</h6>
+                <p class="small mb-0">Railway (API + web + database), Cloudflare DNS, production SSL</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mt-4 mb-3">
+          <h3 class="h4 mb-0">Portal screenshots</h3>
+          <a href="https://portal.circularsupply.org" class="btn btn-outline-dark btn-sm" target="_blank" rel="noopener noreferrer">Visit portal login</a>
+        </div>
+
+        <div class="row g-3 cs-portal-grid">
+          <div class="col-md-6 col-lg-4">
+            <figure>
+              <img src="images/circular-supply/portal-login.png" alt="Circular Supply portal login screen" class="cs-screenshot" data-bs-toggle="modal" data-bs-target="#portalModal" data-bs-image="images/circular-supply/portal-login.png" data-bs-caption="Portal login">
+              <figcaption class="text-muted small mt-2">Login</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <figure>
+              <img src="images/circular-supply/portal-dashboard.png" alt="Circular Supply admin dashboard" class="cs-screenshot" data-bs-toggle="modal" data-bs-target="#portalModal" data-bs-image="images/circular-supply/portal-dashboard.png" data-bs-caption="Admin dashboard">
+              <figcaption class="text-muted small mt-2">Dashboard</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <figure>
+              <img src="images/circular-supply/portal-pickups.png" alt="Circular Supply portal pickups view" class="cs-screenshot" data-bs-toggle="modal" data-bs-target="#portalModal" data-bs-image="images/circular-supply/portal-pickups.png" data-bs-caption="Pickups management">
+              <figcaption class="text-muted small mt-2">Pickups</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <figure>
+              <img src="images/circular-supply/portal-scheduling.png" alt="Circular Supply portal scheduling calendar" class="cs-screenshot" data-bs-toggle="modal" data-bs-target="#portalModal" data-bs-image="images/circular-supply/portal-scheduling.png" data-bs-caption="Scheduling calendar">
+              <figcaption class="text-muted small mt-2">Scheduling</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <figure>
+              <img src="images/circular-supply/portal-credits.png" alt="Circular Supply portal credits view" class="cs-screenshot" data-bs-toggle="modal" data-bs-target="#portalModal" data-bs-image="images/circular-supply/portal-credits.png" data-bs-caption="Credits management">
+              <figcaption class="text-muted small mt-2">Credits</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <figure>
+              <img src="images/circular-supply/portal-invoices.png" alt="Circular Supply portal invoices view" class="cs-screenshot" data-bs-toggle="modal" data-bs-target="#portalModal" data-bs-image="images/circular-supply/portal-invoices.png" data-bs-caption="Invoice management">
+              <figcaption class="text-muted small mt-2">Invoices</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <figure>
+              <img src="images/circular-supply/portal-clients.png" alt="Circular Supply portal clients view" class="cs-screenshot" data-bs-toggle="modal" data-bs-target="#portalModal" data-bs-image="images/circular-supply/portal-clients.png" data-bs-caption="Client management">
+              <figcaption class="text-muted small mt-2">Clients</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <figure>
+              <img src="images/circular-supply/portal-sites.png" alt="Circular Supply portal sites view" class="cs-screenshot" data-bs-toggle="modal" data-bs-target="#portalModal" data-bs-image="images/circular-supply/portal-sites.png" data-bs-caption="Site management">
+              <figcaption class="text-muted small mt-2">Sites</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-light" id="role">
+      <div class="container mt-5 mb-5 pb-5">
+        <h2 class="mt-5">My Role</h2>
+        <hr>
+        <div class="row mt-4">
+          <div class="col-lg-8">
+            <p>As the freelance developer on this project, I handled end-to-end delivery for both the marketing site and the portal — from initial Figma wireframes through production deployment and ongoing support.</p>
+            <h4 class="h5 mt-4">Marketing website</h4>
+            <ul>
+              <li>Translated Figma designs into responsive Astro and React components</li>
+              <li>Built contact forms, sample report flows, and server-side API routes</li>
+              <li>Set up email delivery, asset optimization, and visual regression testing</li>
+              <li>Deployed and configured the site on Railway with custom domain and SSL</li>
+            </ul>
+            <h4 class="h5 mt-4">Web portal</h4>
+            <ul>
+              <li>Designed and built the full-stack portal from requirements gathering through deployment</li>
+              <li>Implemented admin and client views with role-based data segregation</li>
+              <li>Integrated Google Maps, Xero invoicing, and email notification systems</li>
+              <li>Built scheduling, credits, pickup tracking, and invoice generation workflows</li>
+              <li>Configured Railway services, PostgreSQL, and production environment variables</li>
+              <li>Provide ongoing technical support, bug fixes, and feature updates</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Related on resume</h5>
+                <p class="card-text small">This project is described under <strong>Freelance Web Developer &amp; Front-End Designer</strong> on my resume page, including portal features like scheduling, credits, Xero integration, and Google Maps.</p>
+                <a href="index.html#experience" class="btn btn-outline-dark btn-sm">View resume</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal fade" id="portalModal" tabindex="-1" aria-labelledby="portalModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="portalModalLabel">Portal screenshot</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-0">
+            <img src="" alt="" class="w-100" id="portalModalImage">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="py-3 bg-light text-center">
+      <div class="container">
+        <p>Circular Supply project work completed as freelance developer. Live sites hosted by Circular Supply Inc.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+      document.getElementById('portalModal').addEventListener('show.bs.modal', function (event) {
+        var trigger = event.relatedTarget;
+        var image = trigger.getAttribute('data-bs-image');
+        var caption = trigger.getAttribute('data-bs-caption');
+        document.getElementById('portalModalImage').src = image;
+        document.getElementById('portalModalImage').alt = caption;
+        document.getElementById('portalModalLabel').textContent = caption;
+      });
+    </script>
+  </body>
+</html>

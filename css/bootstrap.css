@@ -76,8 +76,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #fff;
-  --bs-link-hover-color: #9adae2;
+  --bs-link-color: #5a5a5a;
+  --bs-link-hover-color: #343a40;
   --bs-code-color: #e83e8c;
   --bs-highlight-bg: #fff5e1;
 }
@@ -255,6 +255,12 @@ a {
 }
 a:hover {
   color: var(--bs-link-hover-color);
+}
+
+#helloBox a,
+#helloBox a:hover,
+#helloBox a:focus {
+  color: #fff;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
