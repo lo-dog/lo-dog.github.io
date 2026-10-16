@@ -70,12 +70,6 @@ a:hover {
   text-decoration: none;
 }
 
-.navbar .navbar-brand img {
-  width: 56px;
-  height: 40px;
-  object-fit: contain;
-}
-
 .navbar .nav-link {
   color: #4a4a4a;
   padding-left: 0.75rem;
